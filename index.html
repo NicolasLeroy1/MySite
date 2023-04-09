@@ -14,7 +14,7 @@
             color: #333;
             margin: 0;
             padding: 20px;
-            background-color: #004464;
+            background-color: #00411b;
         }
         .container {
             display: grid;
@@ -37,21 +37,34 @@
             padding: 20px 0;
             color: #fff;
         }
+        .portrait {
+            width: 210px;
+            height: 270px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border-radius: 80%;
+            text-align: center;
+        }
         h1 {
             font-size: 32px;
             margin-bottom: 20px;
-            color: #1a73e8;
+            color: #05853a;
             text-transform: uppercase;
             font-weight: bold;
             letter-spacing: 2px;
-            border-bottom: 2px solid #1a73e8;
+            border-bottom: 2px solid #05853a;
             display: inline-block;
             padding-bottom: 5px;
         }
         h2 {
             font-size: 24px;
             margin-bottom: 10px;
-            color: #1a73e8;
+            color: #05853a;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         ul {
             list-style-type: none;
@@ -62,7 +75,7 @@
         }
         li i {
             margin-right: 5px;
-            color: #1a73e8;
+            color: #05853a;
         }
     </style>
 </head>
@@ -72,6 +85,11 @@
     </header>
     <main>
         <div class="container">
+            <div class="panel">
+                <div class="image-container">
+                    <img class="portrait" src="portrait.jpg" alt="Nicolas Leroy" >
+                </div>
+            </div>
             <div class="panel">
                 <h2><i class="fas fa-info-circle"></i>Informations personnelles</h2>
                 <ul>
@@ -83,53 +101,51 @@
             <div class="panel">
                 <h2><i class="fas fa-graduation-cap"></i>Formation</h2>
                 <ul>
-                    <li><i class="fas fa-university"></i>Master Mathématiques parcours Data Science, <a href="https://www.umontpellier.fr/" target="_blank">Université de Montpellier</a> 2022-maintenant</li>
+                    <li><i class="fas fa-university"></i>Master Mathématiques parcours Data Science, Université de Montpellier 2022-maintenant</li>
                     <li><i class="fas fa-university"></i>Licence de Physique, Université de Montpellier 2014-2018</li>
                     <li><i class="fas fa-university"></i>Licence de Mathématiques, Université de Montpellier 2019-2022</li>
-                    </ul>
-                    </div>
-                    <div class="panel">
-                    <h2><i class="fas fa-briefcase"></i>Expériences professionnelles</h2>
-                    <ul>
+                </ul>
+            </div>
+            <div class="panel">
+                <h2><i class="fas fa-briefcase"></i>Expériences professionnelles</h2>
+                <ul>
                     <li><i class="fas fa-chalkboard-teacher"></i>Enseignant remplaçant, Académie de Montpellier (1 an)</li>
                     <li><i class="fas fa-camera"></i>Photographe indépendant (1 an)</li>
-                    </ul>
-                    </div>
-                    <div class="panel">
-                    <h2><i class="fas fa-cogs"></i>Compétences</h2>
-                    <ul>
+                </ul>
+            </div>
+            <div class="panel">
+                <h2><i class="fas fa-cogs"></i>Compétences</h2>
+                <ul>
                     <li><i class="fas fa-code"></i>Langages : Python, R, SQL, HTML</li>
                     <li><i class="fas fa-chart-line"></i>Analyse de données et modélisation statistique</li>
                     <li><i class="fas fa-chart-bar"></i>Visualisation de données</li>
-                    </ul>
-                    </div>
-                    <div class="panel">
-                    <h2><i class="fas fa-globe"></i>Langues</h2>
-                    <ul>
+                </ul>
+            </div>
+            <div class="panel">
+                <h2><i class="fas fa-globe"></i>Langues</h2>
+                <ul>
                     <li><i class="fas fa-flag"></i>Français : Langue maternelle</li>
                     <li><i class="fas fa-flag"></i>Anglais : Courant</li>
-                    </ul>
-                    </div>
-                    <div class="panel">
-                        <h2><i class="fas fa-bullseye"></i>Buts</h2>
-                        <ul>
-                            <li><i class="fas fa-puzzle-piece"></i>Faire face à des problèmes variés et complexes</li>
-                            <li><i class="fas fa-users"></i>Collaborer avec des experts de différents domaines</li>
-                            <li><i class="fas fa-chart-line"></i>Contribuer à l'innovation au sein d'une équipe performante</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="panel">
-                        <h2><i class="fas fa-heart"></i>Centres d'intérêt</h2>
-                        <ul>
-                            <li><i class="fas fa-camera"></i>Photographie (Portrait)</li>
-                            <li><i class="fas fa-music"></i>Composition, Harmonie, Piano</li>
-                            <li><i class="fas fa-headphones-alt"></i>Production musicale</li>
-                            <li><i class="fas fa-utensils"></i>Cuisine</li>
-                        </ul>
-                    </div>
-                    
-                    </div>
-                    </main>
-                    </body>
-                    </html>
+                </ul>
+            </div>
+            <div class="panel">
+                <h2><i class="fas fa-bullseye"></i>Buts</h2>
+                <ul>
+                    <li><i class="fas fa-puzzle-piece"></i>Faire face à des problèmes variés et complexes</li>
+                    <li><i class="fas fa-users"></i>Collaborer avec des experts de différents domaines</li>
+                    <li><i class="fas fa-chart-line"></i>Contribuer à l'innovation au sein d'une équipe performante</li>
+                </ul>
+            </div>     
+            <div class="panel">
+                <h2><i class="fas fa-heart"></i>Centres d'intérêt</h2>
+                <ul>
+                    <li><i class="fas fa-camera"></i>Photographie (Portrait)</li>
+                    <li><i class="fas fa-music"></i>Composition, Harmonie, Piano</li>
+                    <li><i class="fas fa-headphones-alt"></i>Production musicale</li>
+                    <li><i class="fas fa-utensils"></i>Cuisine</li>
+                </ul>
+            </div> 
+        </div>
+    </main>
+</body>
+</html>
