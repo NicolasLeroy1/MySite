@@ -11,10 +11,10 @@
             font-family: 'Roboto', sans-serif;
             font-size: 16px;
             line-height: 1.6;
-            color: #333;
+            color: #063366;
             margin: 0;
             padding: 20px;
-            background-color: #00411b;
+            background-color: #639de0;
         }
         .container {
             display: grid;
@@ -26,20 +26,20 @@
             border: 1px solid #727171;
             border-radius: 5px;
             padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
             flex-basis: 48%;
         }
         header {
             text-align: center;
             margin-bottom: 30px;
-            background-color: #2c3239;
+            background-color: #095ab8;
             padding: 20px 0;
             color: #fff;
         }
         .portrait {
             width: 210px;
-            height: 270px;
+            height: 300px;
             object-fit: cover;
             margin-bottom: 20px;
             border-radius: 80%;
@@ -48,18 +48,18 @@
         h1 {
             font-size: 32px;
             margin-bottom: 20px;
-            color: #05853a;
+            color: #191a19;
             text-transform: uppercase;
             font-weight: bold;
             letter-spacing: 2px;
-            border-bottom: 2px solid #05853a;
+            border-bottom: 2px solid #191a19;
             display: inline-block;
             padding-bottom: 5px;
         }
         h2 {
             font-size: 24px;
             margin-bottom: 10px;
-            color: #05853a;
+            color: #095ab8;
         }
         .image-container {
             display: flex;
@@ -75,7 +75,7 @@
         }
         li i {
             margin-right: 5px;
-            color: #05853a;
+            color: #191a19;
         }
     </style>
 </head>
@@ -85,11 +85,7 @@
     </header>
     <main>
         <div class="container">
-            <div class="panel">
-                <div class="image-container">
-                    <img class="portrait" src="portrait.jpg" alt="Nicolas Leroy" >
-                </div>
-            </div>
+            
             <div class="panel">
                 <h2><i class="fas fa-info-circle"></i>Informations personnelles</h2>
                 <ul>
@@ -99,9 +95,20 @@
                 </ul>
             </div>
             <div class="panel">
+                <div class="image-container">
+                    <img class="portrait" src="portrait.jpg" alt="Nicolas Leroy" >
+                </div>
+            </div>
+            <div class="panel">
+                <h2><i class="fas fa-notepad"></i>Résumé</h2>
+                <ul>
+                    <li><i class="fas fa-check"></i>Etudiant en master de science des données à la recherche d'une alternance pour septembre 2023, avec des intérets et compétences éclectiques.</li>
+                </ul>
+            </div> 
+            <div class="panel">
                 <h2><i class="fas fa-graduation-cap"></i>Formation</h2>
                 <ul>
-                    <li><i class="fas fa-university"></i>Master Mathématiques parcours Data Science, Université de Montpellier 2022-maintenant</li>
+                    <li><i class="fas fa-university"></i>Master Mathématiques parcours Science des données, Université de Montpellier 2022-maintenant</li>
                     <li><i class="fas fa-university"></i>Licence de Physique, Université de Montpellier 2014-2018</li>
                     <li><i class="fas fa-university"></i>Licence de Mathématiques, Université de Montpellier 2019-2022</li>
                 </ul>
@@ -116,9 +123,10 @@
             <div class="panel">
                 <h2><i class="fas fa-cogs"></i>Compétences</h2>
                 <ul>
-                    <li><i class="fas fa-code"></i>Langages : Python, R, SQL, HTML</li>
+                    <li><i class="fas fa-code"></i>Langages : Python,  R, SQL, HTML, C#, Rust,</li>
                     <li><i class="fas fa-chart-line"></i>Analyse de données et modélisation statistique</li>
                     <li><i class="fas fa-chart-bar"></i>Visualisation de données</li>
+                    <li><i class="fas fa-calculator"></i>Mathématiques fondamentales</li>
                 </ul>
             </div>
             <div class="panel">
@@ -140,11 +148,12 @@
                 <h2><i class="fas fa-heart"></i>Centres d'intérêt</h2>
                 <ul>
                     <li><i class="fas fa-camera"></i>Photographie (Portrait)</li>
-                    <li><i class="fas fa-music"></i>Composition, Harmonie, Piano</li>
-                    <li><i class="fas fa-headphones-alt"></i>Production musicale</li>
+                    <li><i class="fas fa-computer"></i>Dévelopement</li>
+                    <li><i class="fas fa-music"></i>Composition, Production Musicale, Piano</li>
                     <li><i class="fas fa-utensils"></i>Cuisine</li>
                 </ul>
             </div> 
+            
         </div>
     </main>
 </body>
