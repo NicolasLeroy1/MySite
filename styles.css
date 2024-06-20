@@ -110,8 +110,22 @@ li i {
     text-decoration: underline;
 }
 
+@media (min-width: 600px) {
+    .container {
+        padding: 0 32px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+}
+
 @media (min-width: 1200px) {
     .container {
-        margin: 40px; /* Space around the container for very large screens */
+        margin: 40px auto; /* Center container horizontally on large screens */
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 }
